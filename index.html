@@ -10,15 +10,21 @@
 
     <!-- Required for proton -->
     <script src="https://unpkg.com/@proton/web-sdk@4.1.4"></script>
+    <link rel="stylesheet" href="css/flags.css">
   </head>
 
   <body>
+    <div id="google_translate_element" style="top: 10px;right: 10px;position: absolute;z-index: 1;"></div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
+    </script>
     <div class="relative bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center border-b border-gray-200 py-6 md:justify-start md:space-x-10">
           <div class="hidden sm:block flex justify-start">
             <span class="sr-only">Proton</span>
-            <img class="w-auto h-8 sm:h-10" src="https://protonresources.com/img/logo.475b3e38.svg" alt="">
+            <img class="w-auto h-8 sm:h-10" src="https://proton-tips.vercel.app/images/protontips.png" alt="ptips">
           </div>
   
           <nav class="flex cursor-pointer space-x-4 sm:space-x-10 justify-center pr-2">
@@ -131,7 +137,7 @@
             id="transfer-button"
             class="cursor-pointer whitespace-nowrap bg-purple-100 border border-transparent rounded-md py-2 px-4 inline-flex items-center justify-center text-base font-medium text-purple-600 hover:bg-purple-200"
           >
-            Transfer
+            Send Tip !
           </div>
         </div>
       </div>
